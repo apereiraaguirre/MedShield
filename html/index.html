@@ -13,6 +13,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link rel="icon" href="../images/shield.png">
 </head>
 
 <body>
@@ -31,14 +32,14 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="about.html">
-                        <box-icon size="20px" color="#136191" name='question-mark'></box-icon> Acerca de nosotros
+                    <a class="nav-link" aria-current="page" href="about.html" style="border-right: rgb(255, 255, 255) 2px solid;">
+                        <box-icon  size="20px" color="#fff" name='network-chart' type="solid"></box-icon> Acerca de nosotros
                     </a>
-                    <a class="nav-link" href="#">
-                        <box-icon size="20px" color="#136191" name='cart-alt' type='solid'></box-icon> Productos
+                    <a class="nav-link" href="#" style="border-right: rgb(255, 255, 255) 2px solid;">
+                        <box-icon size="20px" color="#fff" name='cart-alt' type='solid' ></box-icon> Productos
                     </a>
                     <a class="nav-link" href="./contact.html">
-                        <box-icon size="20px" color="#136191" name='contact' type='solid'></box-icon> Contáctenos
+                        <box-icon size="20px" color="#fff" name='contact' type='solid'></box-icon> Contáctenos
                     </a>
                 </div>
             </div>
@@ -95,11 +96,10 @@
 
             </div>
 
-
             <div class="row p-1 bg-secondary">
                 <div class="container col-7 mt-3 mb-3">
-                    <div style="text-align: center;background-color: #165176; color: rgb(150, 150, 150);"
-                        class="display-3 mb-4 m-2 p-3 text-white">
+                    <div style="text-align: center; color: rgb(255, 255, 255); border: white 2px solid;"
+                        class="bg-primary display-4 mb-4 m-2 p-3 text-white">
                         Preguntas frecuentes de COVID-19
                     </div>
                     <div class="accordion" id="acordionPrincipal">
@@ -128,7 +128,7 @@
                                 <button class="accordion-button collapsed text-white bg-dark" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo"><strong>¿Qué ocurre a las personas que contraen
-                                        la COVID-19?</strong>
+                                        el COVID-19?</strong>
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -182,21 +182,21 @@
                                 <button class="accordion-button collapsed text-white bg-dark" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
-                                    <strong>¿Tiene la COVID-19 efectos a largo plazo?
+                                    <strong>¿Tiene el COVID-19 efectos a largo plazo?
                                     </strong>
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#acordionPrincipal">
                                 <div class="accordion-body">
-                                    <p>Algunas personas que han padecido la COVID-19, tanto si han necesitado atención
+                                    <p>Algunas personas que han padecido el COVID-19, tanto si han necesitado atención
                                         hospitalaria como si no, siguen experimentando síntomas, entre ellos fatiga y
                                         diversos
                                         síntomas respiratorios y neurológicos.</p>
                                     <p> En la OMS estamos trabajando con nuestra Red técnica mundial para la gestión
                                         clínica
                                         de
-                                        la COVID-19, así como con investigadores y grupos de pacientes de todo el mundo,
+                                        el COVID-19, así como con investigadores y grupos de pacientes de todo el mundo,
                                         para
                                         diseñar y llevar a cabo estudios que vayan más allá del estadio inicial agudo de
                                         la
@@ -220,8 +220,8 @@
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#acordionPrincipal">
                                 <div class="accordion-body">
-                                    <p>Si tiene síntomas que apuntan a la COVID-19, póngase en contacto con su
-                                        dispensador de atención de salud o la línea de asistencia contra la COVID-19,
+                                    <p>Si tiene síntomas que apuntan a el COVID-19, póngase en contacto con su
+                                        dispensador de atención de salud o la línea de asistencia contra el COVID-19,
                                         para que le den instrucciones y averiguar cuándo y cómo hacerse una prueba,
                                         quédese en casa durante 14 días lejos de otras personas y vigile su salud.</p>
                                     <p>Si tiene dificultades para respirar o dolor u opresión en el pecho, busque
@@ -244,7 +244,7 @@
                                 <button class="accordion-button collapsed text-white bg-dark" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
                                     aria-controls="collapseSix">
-                                    <strong>¿Qué pruebas debería hacerme si tengo la COVID-19? </strong>
+                                    <strong>¿Qué pruebas debería hacerme si tengo el COVID-19? </strong>
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
@@ -272,105 +272,183 @@
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                 data-bs-parent="#acordionPrincipal">
                                 <div class="accordion-body">
-                                    <div class="container" style="text-align: center;">
-                                        <a href="#sintomas" class="btn btn-primary">Ver</a>
+                                    <div class="row" style="text-align: center;">
+                                        <div class="col">
+                                            <a href="#sintomas" class="btn btn-success" data-bs-toggle="modal"
+                                                data-bs-target="#sintomas1">Síntomas menos comúnes</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#sintomas" class="btn btn-warning" data-bs-toggle="modal"
+                                                data-bs-target="#sintomas2">Síntomas leves</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#sintomas" class="btn btn-danger" data-bs-toggle="modal"
+                                                data-bs-target="#sintomas3">Síntomas graves</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="sintomas1" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="list-group m-4">
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <box-icon color="white" name='message-alt-minus' type='solid'></box-icon> Menos
+                                                comúnes:
+                                            </li>
+                                            <li class="list-group-item  list-group-item-dark">Dolores musculares y corporales</li>
+                                            <li class="list-group-item  list-group-item-dark">Dolor de garganta</li>
+                                            <li class="list-group-item list-group-item-dark">Diarrea</li>
+                                            <li class="list-group-item list-group-item-dark">Conjuntivitis</li>
+                                            <li class="list-group-item  list-group-item-dark">Dolor de cabeza</li>
+                                            <li class="list-group-item  list-group-item-dark">Pérdida reciente del olfato o el gusto</li>
+                                            <li class="list-group-item list-group-item-dark">Sarpullido</li>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="sintomas2" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="list-group m-4">
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <box-icon color="white" name='message-alt-error' type='solid' style="text-align: end;"
+                                                    class="justify-content-end"></box-icon> Leves:
+                                            </li>
+                                            <li class="list-group-item list-group-item-dark">Tos seca</li>
+                                            <li class="list-group-item list-group-item-dark">Fiebre</li>
+                                            <li class="list-group-item list-group-item-dark">Cansancio</li>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="sintomas3" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="list-group m-4">
+                                            <li class="list-group-item bg-secondary text-white">
+                                                <box-icon color="white" name='message-alt-x' type='solid'></box-icon> Graves:
+                                            </li>
+                                            <li class="list-group-item  list-group-item-dark">Dificultad para respirar (sentir que le falta
+                                                el aire)</li>
+                                            <li class="list-group-item  list-group-item-dark">Dolor en el pecho</li>
+                                            <li class="list-group-item  list-group-item-dark">Perdida de voz y/o funiones motoras</li>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-2 container justify-content-center pb-5 pt-4">
-                        <div class="card justify-content-center">
-                            <div class="container" style="text-align: center;">
-                                <img style="height: 150px; width: 150px;" src="../images/cdc.png"
-                                    class="pt-2 card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="mb-3 card-title" style="text-align: center;">Centro para el Control y la
-                                    Prevención de Enfermedades (CDC)
-                                </h5>
-                                <p class="card-text" style="text-align: center;">Ir al sitio del CDC para leer más del
-                                    virus COVID-19</p>
-                                <div class="container" style="text-align: center;">
-                                    <a href="https://espanol.cdc.gov/coronavirus/2019-ncov/your-health/about-covid-19.html"
-                                        target="__blank" class="btn btn-primary">Visitar</a>
-                                </div>
-                            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center"
+        style="background-image: url(../images/covid-banner.jpg); background-size: 100%;">
+        <div class="row justify-content-center">
+            <div class="col-2 container justify-content-center pb-5 pt-4 ms-1 me-1">
+                <div class="card justify-content-center">
+                    <div class="container" style="text-align: center;">
+                        <img style="height: 150px; width: 150px;" src="../images/who.png" class="pt-2 card-img-top"
+                            alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="mb-3 card-title" style="text-align: center;">Organización Mundial de la Salud
+                            (OMS)
+                        </h5>
+                        <p class="card-text" style="text-align: center;">Ir al sitio de la OMS para leer más del
+                            virus COVID-19</p>
+                        <div class="container" style="text-align: center;">
+                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="__blank"
+                                class="btn btn-primary">Visitar</a>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-
-
-        <div class="row justify-content-center" style="background-color: #414141;">
-            <div style="background-color: #969696;" class="col-3 m-3" style="vertical-align: 0%;">
-                <div class="list-group m-4">
-                    <li class="list-group-item bg-secondary text-white">
-                        <box-icon color="white" name='message-alt-minus' type='solid' style="text-align: end;"
-                            class="justify-content-end"></box-icon> Síntomas leves:
-                    </li>
-                    <li class="list-group-item list-group-item-dark">Tos seca</li>
-                    <li class="list-group-item list-group-item-dark">Fiebre</li>
-                    <li class="list-group-item list-group-item-dark">Cansancio</li>
+            <div class="col-2 container justify-content-center pb-5 pt-4 ms-1 me-1">
+                <div class="card justify-content-center">
+                    <div class="container" style="text-align: center;">
+                        <img style="height: 150px; width: 150px;" src="../images/cdc.png" class="pt-2 card-img-top"
+                            alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="mb-3 card-title" style="text-align: center;">Centro para el Control y la
+                            Prevención de Enfermedades (CDC)
+                        </h5>
+                        <p class="card-text" style="text-align: center;">Ir al sitio del CDC para leer más del
+                            virus COVID-19</p>
+                        <div class="container" style="text-align: center;">
+                            <a href="https://espanol.cdc.gov/coronavirus/2019-ncov/your-health/about-covid-19.html"
+                                target="__blank" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-3 m-3" style="background-color: #969696;">
-                <div class="list-group m-4">
-                    <li class="list-group-item bg-secondary text-white">
-                        <box-icon color="white" name='message-alt-error' type='solid'></box-icon> Síntomas menos
-                        comúnes:
-                    </li>
-                    <li class="list-group-item  list-group-item-dark">Dolores musculares y corporales</li>
-                    <li class="list-group-item  list-group-item-dark">Dolor de garganta</li>
-                    <li class="list-group-item list-group-item-dark">Diarrea</li>
-                    <li class="list-group-item list-group-item-dark">Conjuntivitis</li>
-                    <li class="list-group-item  list-group-item-dark">Dolor de cabeza</li>
-                    <li class="list-group-item  list-group-item-dark">Pérdida reciente del olfato o el gusto</li>
-                    <li class="list-group-item list-group-item-dark">Sarpullido</li>
-                </div>
-            </div>
-            <div id="sintomas" class="col-3 m-3" style="background-color: #969696;">
-                <div class="list-group m-4">
-                    <li class="list-group-item bg-secondary text-white">
-                        <box-icon color="white" name='message-alt-x' type='solid'></box-icon> Síntomas graves:
-                    </li>
-                    <li class="list-group-item  list-group-item-dark">Dificultad para respirar (sentir que le falta
-                        el aire)</li>
-                    <li class="list-group-item  list-group-item-dark">Dolor en el pecho</li>
-                    <li class="list-group-item  list-group-item-dark">Perdida de voz y/o funiones motoras</li>
+            <div class="col-2 container justify-content-center pb-5 pt-4 ms-1 me-1">
+                <div class="card justify-content-center">
+                    <div class="container" style="text-align: center;">
+                        <img style="height: 150px; width: 150px;" src="../images/un.png" class="pt-3 card-img-top"
+                            alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="mb-3 card-title" style="text-align: center;">Naciones Unidas (UN)
+                        </h5>
+                        <p class="card-text" style="text-align: center;">Ir al sitio de la UN para leer más del
+                            virus COVID-19</p>
+                        <div class="container" style="text-align: center;">
+                            <a href="https://www.un.org/en/coronavirus" target="__blank"
+                                class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid">
-            <div class="row" style="background-color: rgb(31, 30, 30)">
-                <hr style="border: 2px solid white;" class="mt-3">
+    <div class="container-fluid">
+        <div class="row" style="background-color: rgb(31, 30, 30)">
+            <hr style="border: 2px solid white;" class="mt-3">
 
-                <div class="col-2 p-2 ">
-                    <img class="img-thumbnail" src="../images/ulacit.png" alt="" style="border: 10px rounded;">
-                </div>
-                <div class="col-3 text-align-left p-2 text-white">
-                    <blockquote class="blockquote text-white pb-0 mb-1">
-                        <p>
-                            <box-icon size="25px" type="solid" color="#fff" name="virus"></box-icon> MedShield, TM.
-                        </p>
-                    </blockquote>
-                    <p class="text-white m-0 p-0" style="font-size: 14px;">Desarrollo de Aplicaciones Web</p>
-                    <p class="text-white m-0 p-0" style="font-size: 14px;">Universidad Latinoamericana de Ciencia y
-                        Tecnología</p>
-                    <ul class="text-white" style="font-size: 12px;">
-                        <li>Andrés Pereira</li>
-                        <li>Megan Madrigal</li>
-                        <li>Emmanuel Peña</li>
-                    </ul>
-                </div>
+            <div class="col-2 p-2 ">
+                <img class="img-thumbnail" src="../images/ulacit.png" alt="" style="border: 10px rounded;">
+            </div>
+            <div class="col-3 text-align-left p-2 text-white">
+                <blockquote class="blockquote text-white pb-0 mb-1">
+                    <p>
+                        <box-icon size="25px" type="solid" color="#fff" name="virus"></box-icon> MedShield, TM.
+                    </p>
+                </blockquote>
+                <p class="text-white m-0 p-0" style="font-size: 14px;">Desarrollo de Aplicaciones Web</p>
+                <p class="text-white m-0 p-0" style="font-size: 14px;">Universidad Latinoamericana de Ciencia y
+                    Tecnología</p>
+                <ul class="text-white" style="font-size: 12px;">
+                    <li>Andrés Pereira</li>
+                    <li>Megan Madrigal</li>
+                    <li>Emmanuel Peña</li>
+                </ul>
             </div>
         </div>
-        <script src="../js/topBtn.js"></script>
+    </div>
+    <script src="../js/topBtn.js"></script>
 </body>
 
 </html>

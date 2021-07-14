@@ -13,11 +13,13 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css" />
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-
+    <link rel="icon" href="../images/shield.png">
 </head>
 
 <body>
-    <button onclick="topFunction()" id="topBtn" title="Go to top"><box-icon color="white" name='arrow-from-bottom' type='solid' ></box-icon></button>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <box-icon color="white" name='arrow-from-bottom' type='solid'></box-icon>
+    </button>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
@@ -30,14 +32,16 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="about.html">
-                        <box-icon size="20px" color="#6e000f" name='question-mark'></box-icon> Acerca de nosotros
+                    <a class="nav-link active" aria-current="page" href="about.html"
+                        style="border-right: rgb(255, 255, 255) 2px solid;">
+                        <box-icon size="20px" color="#6e000f" name='network-chart' type="solid"></box-icon> Acerca de
+                        nosotros
                     </a>
-                    <a class="nav-link" href="#">
-                        <box-icon size="20px" color="#136191" name='cart-alt' type='solid'></box-icon> Productos
+                    <a class="nav-link" href="#" style="border-right: rgb(255, 255, 255) 2px solid;">
+                        <box-icon size="20px" color="#fff" name='cart-alt' type='solid'></box-icon> Productos
                     </a>
                     <a class="nav-link" href="./contact.html">
-                        <box-icon size="20px" color="#136191" name='contact' type='solid'></box-icon> Contáctenos
+                        <box-icon size="20px" color="#fff" name='contact' type='solid'></box-icon> Contáctenos
                     </a>
                 </div>
             </div>
@@ -48,24 +52,25 @@
         <div
             style="background-image: url(../images/masks/surgery.jpg); background-position: 100%; background-position-x: center; ">
             <div class="row justify-content-center mb-5">
-                <div class="col-6 m-5 justify-content-center" style="text-align: center; margin-top: 15% !important">
-                    <a href="#nextPage" class="btn btn-danger btn-lg">Conocer más de productos MedShield™</a>
+                <div class="col-4 m-5 justify-content-center" style="text-align: center; margin-top: 15% !important">
+                    <a href="#misionVision" class="btn btn-danger btn-lg">Conocer más de MedShield™</a>
                 </div>
             </div>
             <div class="row justify-content-center mt-5" style="text-align: left;">
                 <div class="col-6 m-5"
-                    style="text-align:left; margin-bottom: 10% !important; margin-top: 10% !important">
-                    <h1 class="display-6 text-white bg-secondary">
+                    style="text-align:justify; margin-bottom: 10% !important; margin-top: 10% !important">
+                    <h1 class="display-6 text-white bg-secondary p-2">
                         🛡MedShield se dedica a transformar el sector médico mediante soluciones médicas que mejoran la
-                        salud de pacientes de todo el país.
+                        salud de pacientes alrededor del país.
                     </h1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row justify-content-center" style="background: rgb(87, 87, 87);">
+    <div id="misionVision" class="row justify-content-center" style="background: rgb(63, 63, 63);">
+        <hr style="border: 2px solid white; margin-top: 1%;">
         <div class="col-6" style="margin: 5%;">
-            <div class="accordion" id="accordionExample">
+            <div class="accordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -75,7 +80,9 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body bg-light"><span><strong>MedShield dedica sus operaciones a ser un pilar de la comunidad médica para el resguarde de la salud pública. 🩺</strong></span>
+                        <div class="accordion-body bg-light"><span><strong>MedShield dedica sus operaciones a ser un
+                                    pilar de la comunidad médica para el resguarde de la salud pública.
+                                    🩺</strong></span>
                         </div>
                     </div>
                 </div>
@@ -89,15 +96,25 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body bg-light">
-                            <strong>Un mundo saludable, con una población que practique medidas de prevención, y donde gobiernos, organizaciones y empresas colaboren en conjunto para mantener una sociedad segura e higiénica para todo público. 🌎</strong>
+                            <strong>Un mundo saludable, con una población que practique medidas de prevención, y donde
+                                gobiernos, organizaciones y empresas colaboren en conjunto para mantener una sociedad
+                                segura e higiénica para todo público. 🌎</strong>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container justify-content-center" style="margin: 5%; margin-bottom: 1%; text-align: center;">
-                <a href="#contacto" class="btn btn-secondary btn-lg">
+                <a href="#mascarilla" class="btn btn-primary btn-lg me-5" style="border: white 2px solid">
                     <div class="row p-2">
-                        Saber más
+                        Productos y servicios MedShield™
+                    </div>
+                    <div class="row">
+                        <box-icon type='solid' name='down-arrow' color="white"></box-icon>
+                    </div>
+                </a>
+                <a href="#contacto" class="btn btn-primary btn-lg ms-5" style="border: white 2px solid">
+                    <div class="row p-2">
+                        Contáctenos para saber más
                     </div>
                     <div class="row">
                         <box-icon type='solid' name='down-arrow' color="white"></box-icon>
@@ -105,20 +122,25 @@
                 </a>
             </div>
         </div>
+        <hr style="border: 2px solid white;">
     </div>
-    <div id="nextPage" style="background-color:rgb(255, 255, 255)">
+    <div style="background-color:rgb(255, 255, 255)">
         <div class="row justify-content-center">
-            <div class="col-8 justify-content-center m-5" style="text-align: center;">
-                <p class="display-3 text-dark justify-content-center" style="text-align: center;">
+            <div id="mascarilla" class="col-8 justify-content-center m-5" style="text-align: center;">
+                <p class="display-3 text-dark justify-content-center" style="text-align: justify;">
                     Las mascarillas manufacturadas y distribuidas por MedShield protegen las emisiones de partículas con
-                    98% de eficacia.
+                    98% de eficacia. <a href="#alcohol">
+                        <box-icon id="nextchev1" name='chevron-right-square' class="bx bxs-like bx-fade-right-hover"
+                            color="black" size="200%"></box-icon>
+                    </a>
                 </p>
             </div>
         </div>
     </div>
     <div class="row" style="margin-bottom: 2%;">
         <div class="container col-8" style="text-align: justify;">
-            <p class="h3 text-dark" style="background-color: silver;"> ¿Cómo se transmite el coronavirus y por qué son
+            <p class="h3 text-dark" style="background-color: silver; text-align: center;"> ¿Cómo se transmite el
+                coronavirus y por qué son
                 eficaces las mascarillas para prevenirlo?</p>
             <p class="p-2 m-3">
                 Aunque también está demostrado que el coronavirus se puede transmitir por el contacto con superficies
@@ -141,7 +163,8 @@
     </div>
     <div class="row">
         <div class="container col-8 justify-content-center" style="text-align: justify;">
-            <p class="h3 text-dark justify-content-center" style="background-color: silver;">¿Qué tipo de mascarillas
+            <p class="h3 text-dark justify-content-center" style="background-color: silver; text-align: center;">¿Qué
+                tipo de mascarillas
                 son las más eficaces frente al coronavirus?</p>
             <p class="p-2 m-3">
                 Existen numerosos estudios sobre la eficacia de los diferentes tipos de mascarillas para prevenir la
@@ -162,38 +185,136 @@
             </p>
         </div>
     </div>
-    <div style="background-image: url(../images/dna2.jpg); background-position: 100%; background-position-x: center; ">
+    <div class="row justify-content-center">
+        <div class="col-8 justify-content-center m-5">
+            <p id="alcohol" class="display-3 text-dark justify-content-center mb-5" style="text-align: justify;">
+                El desinfectante de manos MedShield™ con una concentración de 90% alcohol isoprópico es un producto
+                indispensable para mantenerse protegido.
+                <a href="#mascarilla">
+                    <box-icon name='chevron-left-square' class="bx bxs-like bx-fade-right-hover" color="black"
+                        size="200%"></box-icon>
+                </a>
+                <a href="#vacuna">
+                    <box-icon name='chevron-right-square' class="bx bxs-like bx-fade-right-hover" color="black"
+                        size="200%"></box-icon>
+                </a>
+            </p>
+            <p class="h3 text-dark justify-content-center" style="background-color: silver; text-align: center;">¿Por
+                qué usar desinfectante de manos?</p>
+            <p class="p-2 m-3" style="text-align: justify;">
+                Existen diferencias importantes entre lavarse las manos con agua y jabón y limpiárselas con un
+                desinfectante de manos. El agua y jabón actúan eliminando todo tipo de microbio de las manos, mientras
+                que el desinfectante elimina ciertos microbios sobre la piel. Por ejemplo, aunque en muchas situaciones
+                los desinfectantes de manos a base de alcohol pueden reducir rápidamente la cantidad de microbios, se
+                deberían usar solamente en las situaciones correctas.
+            </p>
+            <p class="p-2 m-3" style="text-align: justify;">
+                Limpiarse las manos en los momentos clave o con un desinfectante de manos es una de las medidas más
+                importantes que puede tomar para evitar enfermarse y propagar microbios a aquellos a su alrededor.
+                Importante no se enjuagarse ni se sacarse el desinfectante de manos con una toalla antes de que esté
+                seco: podría hacer que no funcione bien contra los microbios.
+            </p>
+            <p class="h3 text-dark justify-content-center" style="background-color: silver; text-align: center;">¿Qué
+                debo considerar?</p>
+            <p class="p-2 m-3" style="text-align: justify;">
+                <strong>NO</strong> use un desinfectante de manos si sus manos están visiblemente sucias o engrasadas;
+                por ejemplo, después de trabajar en el jardín, jugar al aire libre, o pescar o ir de campamento. Si hay
+                una estación de lavado de manos disponible, láveselas con agua y jabón en lugar de usar desinfectante de
+                manos.
+            </p>
+            <p class="p-2 m-3" style="text-align: justify;">
+                Después de sonarse la nariz, toser o estornudar, debería limpiarse las manos de inmediato con agua y
+                jabón o con un desinfectante de manos a base de alcohol para evitar la propagación de microbios. Los
+                desinfectantes de manos podrían igualmente no eliminar sustancias químicas perjudiciales (como los
+                pesticidas) y metales pesados (como el plomo). El lavado de manos reduce la cantidad de todo tipo de
+                microbio, pesticida y metal de las manos. Saber cuándo limpiarse las manos y qué método usar le dará la
+                mejor oportunidad de prevenir enfermarse.
+            </p>
+        </div>
         <div class="row justify-content-center">
-            <div class="col-6 m-5 justify-content-center" style="text-align: center; margin-bottom: 15% !important; margin-top: 15% !important">
-                <a id="contacto" href="./contact.html" class="btn btn-warning btn-lg">Contáctenos</a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row" style="background-color: rgb(31, 30, 30)">
-            <hr style="border: 2px solid white;" class="mt-3">
-
-            <div class="col-2 p-2 ">
-                <img class="img-thumbnail" src="../images/ulacit.png" alt="" style="border: 10px rounded;">
-            </div>
-            <div class="col-3 text-align-left p-2 text-white">
-                <blockquote class="blockquote text-white pb-0 mb-1">
-                    <p>
-                        <box-icon size="25px" type="solid" color="#fff" name="virus"></box-icon> MedShield, TM.
-                    </p>
-                </blockquote>
-                <p class="text-white m-0 p-0" style="font-size: 14px;">Desarrollo de Aplicaciones Web</p>
-                <p class="text-white m-0 p-0" style="font-size: 14px;">Universidad Latinoamericana de Ciencia y
-                    Tecnología</p>
-                <ul class="text-white" style="font-size: 12px;">
-                    <li>Andrés Pereira</li>
-                    <li>Megan Madrigal</li>
-                    <li>Emmanuel Peña</li>
+            <div class="col-8 justify-content-center m-5">
+                <p id="vacuna" class="display-3 text-dark justify-content-center mb-5" style="text-align: justify;">
+                    MedShield es un distribuidor autorizado de la vacuna contra el virus COVID-19.
+                    <a href="#alcohol">
+                        <box-icon name='chevron-left-square' class="bx bxs-like bx-fade-right-hover" color="black"
+                            size="200%"></box-icon>
+                    </a>
+                </p>
+                <p class="h3 text-dark justify-content-center" style="background-color: silver; text-align: center;">
+                    ¿A qué edad debo vacunarme?</p>
+                <p class="p-2 m-3" style="text-align: justify;">
+                    La vacuna COVID-19 se recomienda para todas las personas mayores de 12 años. Los
+                    siguientes grupos de edad están autorizados a recibir la vacuna, por proveedor:
+                <ul style="padding-left: 7%;">
+                    <li> Pfizer-BioNTech: edades ≥12 años</li>
+                    <li> Moderna: edades ≥18 años</li>
+                    <li> Janssen: edades ≥18 años</li>
                 </ul>
+                </p>
+                <p class="p-2 m-3" style="text-align: justify;">
+                    Al igual que los adultos, los niños pueden tener algunos efectos secundarios después de recibir la
+                    vacuna contra el COVID-19. Estos efectos secundarios podrían afectar su capacidad para realizar las
+                    actividades diarias, pero deberían desaparecer en unos días
+                </p>
+                <p class="h3 text-dark justify-content-center" style="background-color: silver; text-align: center;">
+                    ¿Debo recibir una segunda dosis?</p>
+                <p class="p-2 m-3" style="text-align: justify;">
+                    La segunda dosis de las vacunas Pfizer-BioNTech y Moderna debe administrarse lo más cerca posible
+                    del intervalo recomendado, pero no antes de lo recomendado (es decir, 3 semanas [Pfizer-BioNTech] o
+                    1 mes [Moderna]). Sin embargo, las segundas dosis administradas dentro de un período de gracia de 4
+                    días antes de la fecha recomendada para la segunda dosis aún se consideran válidas.
+                </p>
+                <p class="p-2 m-3" style="text-align: justify;">
+                    Si no es posible cumplir con el intervalo recomendado y es inevitable un retraso en la vacunación,
+                    la segunda dosis de las vacunas Pfizer-BioNTech y Moderna COVID-19 se puede administrar hasta 6
+                    semanas (42 días) después de la primera dosis. Actualmente, solo se dispone de datos limitados sobre
+                    la eficacia de las vacunas de ARNm COVID-19 administradas más allá de esta ventana.
+                </p>
             </div>
         </div>
-    </div>
-    <script src="../js/topBtn.js"></script>
+
+        <div
+            style="background-image: url(../images/dna2.jpg); background-position: 100%; background-position-x: 100;">
+            <div class="row justify-content-center">
+                <div class="col-6 m-5 justify-content-center dropend"
+                    style="text-align: center; margin-bottom: 15% !important; margin-top: 15% !important">
+                    <a id="contacto" href="#" class="btn btn-warning btn-lg dropdown-toggle" role="button"
+                        id="contactarDropdown" data-bs-toggle="dropdown">Contactar</a>
+                    <ul class="dropdown-menu" aria-labelledby="contactarDropdown">
+                        <li><a class="dropdown-item" href="../html/contact.html">Enviar correo electrónico</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><span class="dropdown-item">Tel.: 2222-4444</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="background-color: rgb(31, 30, 30)">
+                <hr style="border: 2px solid white;" class="mt-3">
+
+                <div class="col-2 p-2 ms-3">
+                    <img class="img-thumbnail" src="../images/ulacit.png" alt="" style="border: 10px rounded;">
+                </div>
+                <div class="col-3 text-align-left p-2 text-white">
+                    <blockquote class="blockquote text-white pb-0 mb-1">
+                        <p>
+                            <box-icon size="25px" type="solid" color="#fff" name="virus"></box-icon> MedShield, TM.
+                        </p>
+                    </blockquote>
+                    <p class="text-white m-0 p-0" style="font-size: 14px;">Desarrollo de Aplicaciones Web</p>
+                    <p class="text-white m-0 p-0" style="font-size: 14px;">Universidad Latinoamericana de Ciencia y
+                        Tecnología</p>
+                    <ul class="text-white" style="font-size: 12px;">
+                        <li>Andrés Pereira</li>
+                        <li>Megan Madrigal</li>
+                        <li>Emmanuel Peña</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../js/topBtn.js"></script>
 </body>
 
 </html>
