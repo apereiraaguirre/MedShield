@@ -15,5 +15,6 @@
   }
   
   #topBtn:hover {
-    background-color: #555;
+    background-color: rgb(117, 117, 117);
+    border: 1px solid #ffffff;
   }
