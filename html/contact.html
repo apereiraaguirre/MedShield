@@ -17,10 +17,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><box-icon name='arrow-from-bottom' type='solid' ></box-icon></button>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
-                <box-icon size="40px" type="solid" color="#136191" name="virus"></box-icon> MedShield
+                <box-icon size="40px" type="solid" color="#136191" name="virus"></box-icon>
+                <span class="p-1" style="vertical-align: 35%; background-color: #136191;">MedShield</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +36,7 @@
                     <a class="nav-link" href="#">
                         <box-icon size="20px" color="#136191" name='cart-alt' type='solid'></box-icon> Productos
                     </a>
-                    <a class="nav-link active" href="#">
+                    <a class="nav-link" href="./contact.html">
                         <box-icon size="20px" color="#6e000f" name='contact' type='solid'></box-icon> Contáctenos
                     </a>
                 </div>
@@ -62,6 +64,31 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid" style="position: fixed; bottom: 0px;">
+        <div class="row" style="background-color: rgb(31, 30, 30)">
+            <hr style="border: 2px solid white;" class="mt-3">
+
+            <div class="col-2 p-2 ">
+                <img class="img-thumbnail" src="../images/ulacit.png" alt="" style="border: 10px rounded;">
+            </div>
+            <div class="col-3 text-align-left p-2 text-white">
+                <blockquote class="blockquote text-white pb-0 mb-1">
+                    <p>
+                        <box-icon size="25px" type="solid" color="#fff" name="virus"></box-icon> MedShield, TM.
+                    </p>
+                </blockquote>
+                <p class="text-white m-0 p-0" style="font-size: 14px;">Desarrollo de Aplicaciones Web</p>
+                <p class="text-white m-0 p-0" style="font-size: 14px;">Universidad Latinoamericana de Ciencia y
+                    Tecnología</p>
+                <ul class="text-white" style="font-size: 12px;">
+                    <li>Andrés Pereira</li>
+                    <li>Megan Madrigal</li>
+                    <li>Emmanuel Peña</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../js/topBtn.js"></script>
 </body>
 
 </html>

@@ -17,10 +17,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><box-icon color="white" name='arrow-from-bottom' type='solid' ></box-icon></button>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
-                <box-icon size="40px" type="solid" color="#136191" name="virus"></box-icon> MedShield
+                <box-icon size="40px" type="solid" color="#136191" name="virus"></box-icon>
+                <span class="p-1" style="vertical-align: 35%; background-color: #136191;">MedShield</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +30,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="about.html">
+                    <a class="nav-link" aria-current="page" href="about.html">
                         <box-icon size="20px" color="#6e000f" name='question-mark'></box-icon> Acerca de nosotros
                     </a>
                     <a class="nav-link" href="#">
@@ -184,6 +186,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/topBtn.js"></script>
 </body>
 
 </html>
